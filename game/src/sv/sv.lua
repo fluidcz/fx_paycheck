@@ -14,7 +14,7 @@ end
 local version = '1.2'
 
 CreateThread(function()
-    PerformHttpRequest('https://api.github.com/repos/fluxcz/fx_paycheck/releases/latest', function(err, text, headers)
+    PerformHttpRequest('https://api.github.com/repos/fusefivem/fx_paycheck/releases/latest', function(err, text, headers)
         if err ~= 200 then
             print('^1[fx_paycheck] Could not check for new version.^7')
             return
@@ -30,7 +30,7 @@ CreateThread(function()
             print('^7Newest Version: ^6'..data.tag_name..'\n')
             print('^6Changelog:^7')
             print(data.body..'\n')
-            print('Get the updated version: https://github.com/fluxcz/fx_paycheck/archive/refs/tags/'..data.tag_name..'.zip')
+            print('Get the updated version: https://github.com/fusefivem/fx_paycheck/archive/refs/tags/'..data.tag_name..'.zip')
             print('^1-------------------------------------------------^7')
         end
     end, 'GET')
