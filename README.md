@@ -1,9 +1,6 @@
 <div align="center">
 
 <img width="2048" height="514" alt="fx_paycheck" src="https://github.com/user-attachments/assets/97ceb976-771e-4a2f-bad2-9fef19037ae3" />
-
-# fx_paycheck
-
 Advanced paycheck script for ESX that automatically pays players based on their job.
 
 ---
