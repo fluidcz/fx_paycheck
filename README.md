@@ -2,41 +2,50 @@
 
 <img width="2048" height="514" alt="fx_paycheck" src="https://github.com/user-attachments/assets/97ceb976-771e-4a2f-bad2-9fef19037ae3" />
 
-Advanced paycheck script for ESX that automatically pays players based on their job.
 
 ---
 
 ## Features
 
-**Job Based Pay**
+**Job Based Pay** -
 Give players a salary based on their current job and grade.
 
-**Custom Pay Interval**
+**Custom Pay Interval** -
 You decide how often players receive their paycheck.
 
-**Optional Taxes**
+**Optional Taxes** -
 Automatically deduct taxes from each paycheck.
 
-**Anti AFK**
+**Anti AFK** -
 Advanced anti AFK system to not reward players, that are AFK.
 
 **Multiple Pay Methods**
-`bank` • Deposit money directly to the bank.
-`cash` • Make players go to the Pacific Bank and claim the money manually.
+
+`bank` - Deposit money directly to the bank.
+
+`cash` - Make players go to the Pacific Bank and claim the money manually.
 
 **Choice of Notification Styles**
-Supported: `esx` • `ox_lib` • `lb_phone` (Wallet app)
+Supported: 
 
-**Easy to Configure**
-Everything is in one simple config file.
+`esx`
 
----
+`ox_lib` 
+
+`lb_phone` (Wallet app)
 
 ## Requirements
 
 ESX Framework (`es_extended`)
 
 `ox_lib`
+
+`esx_society` - Optional
+
+## Preview
+
+<img width="3840" height="2160" alt="fd (1)" src="https://github.com/user-attachments/assets/2abe95bb-25b3-4259-a37b-d102cec7549e" />
+
 
 ---
 
