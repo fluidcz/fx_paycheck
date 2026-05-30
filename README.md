@@ -58,4 +58,8 @@ Restart your server.
 
 All settings are located in the `config.lua` file.
 
+<div align="center">
+  <img width="600" height="900" alt="carbon-fx_paycheck" src="https://github.com/user-attachments/assets/546fc883-8e6f-429f-adf0-6d23ec189e14" />
+</div>
+
 </div>
