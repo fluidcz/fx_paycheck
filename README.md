@@ -17,6 +17,9 @@ You decide how often players receive their paycheck.
 **Optional Taxes**
 Automatically deduct taxes from each paycheck.
 
+**Anzi AFK**
+Advanced anti AFK system to not reward players, that are AFK.
+
 **Multiple Pay Methods**
 `bank` • Deposit money directly to the bank.
 `cash` • Make players go to the Pacific Bank and claim the money manually.
