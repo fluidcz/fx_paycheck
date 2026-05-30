@@ -1,24 +1,25 @@
-# Flux Paycheck
-
-A simple paycheck script for ESX that automatically pays players based on their job.
+<img width="2048" height="514" alt="fx_paycheck" src="https://github.com/user-attachments/assets/97ceb976-771e-4a2f-bad2-9fef19037ae3" />
+Advanced paycheck script for ESX that automatically pays players based on their job.
 
 ## Features
 
--   **Job Based Pay:** Give players a salary based on their current job.
+-   **Job Based Pay:** Give players a salary based on their current job and grade.
 -   **Custom Pay Interval:** You decide how often players receive their paycheck.
 -   **Optional Taxes:** Automatically deduct taxes from each paycheck.
 -   **Multiple Pay Methods:**
     -   `bank`: Deposit money directly to the bank.
-    -   `cash`: Give players cash in hand.
+    -   `cash`: Make players go to the Pacific Bank and claim the money manually.
 -   **Choice of Notification Styles:**
-    -   `esx`: Use standard ESX notifications.
-    -   `ox_lib`: Use modern `ox_lib` notifications.
+    -   `esx`
+    -   `ox_lib`
+    -   `lb_phone`: Uses LB Phone Wallet app to notify the user
 -   **Easy to Configure:** Everything is in one simple config file.
 
 ## Requirements
 
 -   ESX Framework (`es_extended`)
--   `ox_lib` (only if you want to use `ox_lib` notifications)
+-   `ox_lib`
+
 
 ## Installation
 
