@@ -1,52 +1,49 @@
-fx = {}
-Locales = {}
+fd = {}
+locales = {}
 
-fx.locale = 'en' -- 'en' or 'cs'
+fd.locale = 'en'
 
--- Choose your preferred notification system
--- 'esx'
--- 'ox_lib' (requires ox_lib)
-fx.notifysystem = 'ox_lib'
+fd.notifysystem = 'ox_lib' -- 'esx' | 'ox_lib' | 'lb-phone'
+fd.interaction = 'target' -- 'target' | 'textui'
 
--- Choose how players receive their payment
--- 'bank' 
--- 'cash' 
--- 'item' (Make sure to use this option if you are using ox_inventory and you want that players receive it in cash)
-fx.paymentmethod = 'bank'
-fx.itemname = 'money'
+fd.paymentmethod = 'pickup' -- 'bank' | 'pickup' (Bank = Method used in older versions)
+fd.pickupaccount = 'cash'
+fd.paycheckcron = 1
 
--- How often will players receive their paycheck (minutes)
-fx.paycheckinterval = 15
+fd.defaultpay = 500
+fd.usedatabase = true
 
--- If certain job isnt configured in fx.jobs the players will receive this amount
-fx.defaultpay = 500
+fd.enabletaxes = true
+fd.taxrate = 10
 
-fx.enabletaxes = true
-fx.taxrate = 15
+fd.deductfromsociety = true -- Requires esx_society
+fd.societybypass = { 'unemployed' }
 
--- Set to true if you want to fetch jobs and salaries from the database
--- Set to false if you want to use the config below 
-fx.usedatabase = true
+fd.antiafk = true
+fd.afkdistance = 5.0
+fd.afktime = 20
 
--- You can set salaries in 2 ways
--- 1. Same salary for all grades: ['jobname'] = 5000
--- 2. Individual salary per grade: ['jobname'] = { [0] = 1000, [1] = 2000, [2] = 3000 }
-fx.jobs = {
-    ['police'] = {
-        [0] = 3000,  
-        [1] = 3500,  
-        [2] = 4000,  
-        [3] = 4500,  
-        [4] = 5000, 
-        [5] = 5500,  
-    },
-    ['ambulance'] = {
-        [0] = 2500,  
-        [1] = 3000,  
-        [2] = 3500,  
-        [3] = 4000, 
-        [4] = 4500, 
-    },
-    ['mechanic'] = 3500, 
-    ['unemployed'] = 250,
+fd.enableexpiration = true
+fd.expirationtime = 7
+fd.expirationaction = 'return'
+
+fd.pedmodel = 'ig_bankman'
+fd.pickuplocation = vec3(252.9017, 223.0579, 106.2868)
+fd.pickuplocationheading = 161.1427
+
+fd.enableblip = true
+fd.blipname = 'Pacific Bank'
+fd.blipsprite = 207
+fd.blipcolor = 3
+
+fd.jobs = {
+    -- ['police'] = {
+    --     [0] = 3000,
+    --     [1] = 3500,
+    --     [2] = 4000,
+    --     [3] = 4500,
+    --     [4] = 5000,
+    --     [5] = 5500
+    -- },
+    -- ['unemployed'] = 250
 }
