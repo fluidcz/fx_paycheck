@@ -1,52 +1,48 @@
-fx = {}
+fd = {}
 Locales = {}
 
-fx.locale = 'en' -- 'en' or 'cs'
+fd.locale = 'en'
 
--- Choose your preferred notification system
--- 'esx'
--- 'ox_lib' (requires ox_lib)
-fx.notifysystem = 'ox_lib'
+fd.notifysystem = 'ox_lib' -- 'esx' | 'ox_lib' | 'lb-phone'
+fd.interaction = 'target' -- 'target' | 'textui'
 
--- Choose how players receive their payment
--- 'bank' 
--- 'cash' 
--- 'item' (Make sure to use this option if you are using ox_inventory and you want that players receive it in cash)
-fx.paymentmethod = 'bank'
-fx.itemname = 'money'
+fd.paymentmethod = 'pickup' -- 'bank' | 'pickup' (Bank = Method used in older versions)
+fd.pickupaccount = 'bank' -- 'bank' | 'cash'
+fd.paycheckcron = 1 -- How often players receive their paycheck
 
--- How often will players receive their paycheck (minutes)
-fx.paycheckinterval = 15
+fd.defaultpay = 200
+fd.usedatabase = true -- Automatically fetches all jobs and salaries from database
 
--- If certain job isnt configured in fx.jobs the players will receive this amount
-fx.defaultpay = 500
+fd.enabletaxes = true
+fd.basetax = 10
+fd.hidetax = false -- Hides the tax rate from notifications
 
-fx.enabletaxes = true
-fx.taxrate = 15
+fd.deductfromsociety = true -- Requires esx_society
+fd.societybypass = { 'unemployed', 'police', 'sheriff', 'ambulance' } -- Which jobs will bypass the fd.deductfromsociety option
 
--- Set to true if you want to fetch jobs and salaries from the database
--- Set to false if you want to use the config below 
-fx.usedatabase = true
+fd.antiafk = true
+fd.afkdistance = 5.0
+fd.afktime = 20 -- Minutes
 
--- You can set salaries in 2 ways
--- 1. Same salary for all grades: ['jobname'] = 5000
--- 2. Individual salary per grade: ['jobname'] = { [0] = 1000, [1] = 2000, [2] = 3000 }
-fx.jobs = {
+fd.enableexpiration = true
+fd.expirationtime = 7
+fd.expirationaction = 'return'
+
+fd.pedmodel = 'ig_bankman'
+fd.pickuplocation = vec3(252.9017, 223.0579, 106.2868)
+fd.pickuplocationheading = 161.1427
+
+fd.enableblip = true -- Blip will be created only if fd.paymentmethod = 'pickup'
+fd.blipname = 'Pacific Bank'
+fd.blipsprite = 207
+fd.blipcolor = 3
+
+fd.jobs = {
     ['police'] = {
-        [0] = 3000,  
-        [1] = 3500,  
-        [2] = 4000,  
-        [3] = 4500,  
-        [4] = 5000, 
-        [5] = 5500,  
+        [0] = { pay = 0, tax = 15, label = 'Police Paycheck' },
+        [1] = { pay = 0, tax = 10, label = 'Police Paycheck' }
     },
-    ['ambulance'] = {
-        [0] = 2500,  
-        [1] = 3000,  
-        [2] = 3500,  
-        [3] = 4000, 
-        [4] = 4500, 
-    },
-    ['mechanic'] = 3500, 
-    ['unemployed'] = 250,
+    ['unemployed'] = {
+        [0] = { pay = 0, tax = 0, label = 'Social Benefit' }
+    }
 }
