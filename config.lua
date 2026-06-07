@@ -3,7 +3,7 @@ Locales = {}
 
 fd.locale = 'en'
 
-fd.notifysystem = 'lb-phone' -- 'esx' | 'ox_lib' | 'lb-phone'
+fd.notifysystem = 'ox_lib' -- 'esx' | 'ox_lib' | 'lb-phone'
 fd.interaction = 'target' -- 'target' | 'textui'
 
 fd.paymentmethod = 'pickup' -- 'bank' | 'pickup' (Bank = Method used in older versions)
