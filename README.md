@@ -53,13 +53,17 @@ ESX Framework (`es_extended`)
 ## Installation
 
 Download the script.
-<br>
+
 Put the `fx_paycheck` folder into your `resources` directory.
-<br>
+
 Open `config.lua` and change the settings to your liking.
-<br>
+
 Add `ensure fx_paycheck` to your `server.cfg`.
-<br>
+
+Navigate to `es_extended/shared/config/main.lua`.
+
+On `line 50` set `Config.EnablePaycheck` to `false`.
+
 Restart your server.
 
 ---
