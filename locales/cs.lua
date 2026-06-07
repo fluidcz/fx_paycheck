@@ -1,3 +1,4 @@
+Locales = Locales or {}
 Locales['cs'] = {
     ['received_bank'] = 'Obdržel jsi: ~g~$%s',
     ['received_cash'] = 'Obdržel jsi: ~g~$%s',
@@ -19,6 +20,7 @@ Locales['cs'] = {
 
     ['employer_broke'] = 'Tvůj zaměstnavatel neměl dostatek financí na tvoji výplatu!',
     ['claim_paycheck'] = 'Výplata',
+    ['claim_all'] = 'Vybrat vše',
     ['paycheck_claimed'] = 'Vybral jsi svou nevyzvednutou výplatu ve výši $%s',
     ['no_pending'] = 'Nemáš žádné nevyzvednuté výplaty k vybrání.',
     ['afk_skipped'] = 'Byl jsi AFK! Tvoje výplata byla zrušena.',
