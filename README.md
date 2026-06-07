@@ -1,4 +1,5 @@
 <div align="center">
+Viewing this in VS Code? Press [CTRL + SHIFT + V]
 
 <img width="2048" height="514" alt="fx_paycheck" src="https://github.com/user-attachments/assets/97ceb976-771e-4a2f-bad2-9fef19037ae3" />
 
