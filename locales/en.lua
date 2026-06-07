@@ -1,3 +1,4 @@
+Locales = Locales or {}
 Locales['en'] = {
     ['received_bank'] = 'You received: ~g~$%s',
     ['received_cash'] = 'You received: ~g~$%s',
@@ -19,6 +20,7 @@ Locales['en'] = {
 
     ['employer_broke'] = 'Your employer could not fund your paycheck this week!',
     ['claim_paycheck'] = 'Claim Paycheck',
+    ['claim_all'] = 'Claim All',
     ['paycheck_claimed'] = 'You claimed your pending paycheck of $%s',
     ['no_pending'] = 'You have no pending paychecks to claim.',
     ['afk_skipped'] = 'You were AFK and your paycheck was skipped.',
